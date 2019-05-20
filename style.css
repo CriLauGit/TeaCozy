@@ -1,0 +1,139 @@
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+    body{
+        font-size: 100%;
+    }
+    .location{
+        max-width: 150px;
+    }
+}
+
+header {
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: black;
+}
+
+.logo img {
+    margin-top: 10px;
+    max-height: 50px;
+    margin-left: 10px;
+    float: left;
+    width: auto;
+}
+
+nav {
+  margin-right: 10px;
+  float: right;
+}
+
+nav li {
+    display: inline;
+    text-decoration: underline;
+}
+
+.mission {
+    top: 62px;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 700px;
+    flex-basis: 1200px;
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: flex;
+}
+
+.content {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    padding: 5px;
+}
+
+.teas {
+    position: relative;
+    top: 100px;
+}
+
+.tea {
+    display: flex;
+    position: relative;
+    top: 100px;
+    flex-basis: 1000px;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.type {
+    width: 300px;
+    height: auto;
+    margin: 10px 10px;
+}
+
+.type img {
+    height: 200px; 
+    width: 300px;
+}
+
+.locations {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-size: cover;
+    height: 500px;
+    flex-basis: 1200px;
+    max-width: 1200px;
+    position: relative;
+    top: 80px;
+    margin: 0 auto;
+} 
+
+.locations h2 {
+    position: relative;
+    top: 50px;
+}
+
+.details {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    top: 37px;
+}
+
+.location {
+    position: relative;
+    width: 300px;
+    opacity: 1; 
+    background-color: black;
+    margin: 5px 10px 5px 10px;  
+}
+
+.contact {
+    position: relative;
+    height: 200px;
+    top: 90px;
+}
+
+footer h5 {
+    margin-left: 20px;
+    float: left;
+}
