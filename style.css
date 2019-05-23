@@ -41,7 +41,25 @@ nav {
 
 nav li {
     display: inline;
-    text-decoration: underline;
+}
+
+a {
+    color: seashell;
+}
+
+.locations a {
+    position: absolute;
+    top: -70px;
+}
+
+.mission a {
+    position: absolute;
+    top: -70px;
+}
+
+.teas a {
+    position: absolute;
+    top: -70px;
 }
 
 .mission {
