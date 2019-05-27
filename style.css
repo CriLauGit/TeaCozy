@@ -7,17 +7,81 @@ body {
     opacity: 0.5;
 }
 
-@media (max-width: 1200px) {
+
+@media (max-width: 768px) {
     body{
         font-size: 100%;
     }
-    .location{
-        max-width: 150px;
+    header {
+        height: 150px;
+    }
+    .locations a {
+        top: -150px;
+    }
+    
+    .mission a {
+        top: -150px;
+    }
+    
+    .teas a {
+        top: -150px;
+    }
+    
+    .locations {
+        overflow-y: scroll;
     }
 }
 
+@media (min-width: 768px) {
+    body{
+        font-size: 100%;
+    }  
+    nav {
+    margin-right: 10px;
+    float: right;
+}
+
+nav li {
+    display: inline;
+}
+
+.logo img {
+    float: left;
+    margin-left: 10px;
+}
+
 header {
-    height: 69px;
+    height: 70px;
+}
+.locations a {
+    top: -70px;
+}
+
+.mission a {
+    top: -70px;
+}
+
+.teas a {
+    top: -70px;
+}
+
+.location {
+    position: relative;
+    width: 25%;
+    opacity: 1; 
+    background-color: black;
+    margin: 5px 10px 5px 10px;  
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: stretch;
+}
+}
+
+header {
     border-bottom: 1px solid seashell;
     width: 100%;
     position: fixed;
@@ -29,18 +93,11 @@ header {
 .logo img {
     margin-top: 10px;
     max-height: 50px;
-    margin-left: 10px;
-    float: left;
     width: auto;
 }
 
-nav {
-  margin-right: 10px;
-  float: right;
-}
-
-nav li {
-    display: inline;
+ul {
+    list-style: none;
 }
 
 a {
@@ -49,17 +106,14 @@ a {
 
 .locations a {
     position: absolute;
-    top: -70px;
 }
 
 .mission a {
     position: absolute;
-    top: -70px;
 }
 
 .teas a {
     position: absolute;
-    top: -70px;
 }
 
 .mission {
@@ -70,7 +124,7 @@ a {
     position: relative;
     height: 700px;
     flex-basis: 1200px;
-    max-width: 1200px;
+    max-width: 95%;
     margin: 0 auto; 
     display: flex;
 }
@@ -94,7 +148,7 @@ a {
     position: relative;
     top: 100px;
     flex-basis: 1000px;
-    max-width: 1000px;
+    max-width: 85%;
     margin: 0 auto;
     height: auto;
     justify-content: center;
@@ -102,14 +156,14 @@ a {
 }
 
 .type {
-    width: 300px;
+    width: 40%;
     height: auto;
     margin: 10px 10px;
 }
 
 .type img {
-    height: 200px; 
-    width: 300px;
+    height: auto; 
+    width: 100%;
 }
 
 .locations {
@@ -117,7 +171,7 @@ a {
     background-size: cover;
     height: 500px;
     flex-basis: 1200px;
-    max-width: 1200px;
+    max-width: 95%;
     position: relative;
     top: 80px;
     margin: 0 auto;
@@ -130,16 +184,12 @@ a {
 
 .details {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
     top: 37px;
+
 }
 
 .location {
     position: relative;
-    width: 300px;
     opacity: 1; 
     background-color: black;
     margin: 5px 10px 5px 10px;  
