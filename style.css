@@ -15,20 +15,16 @@ body {
     header {
         height: 150px;
     }
-    .locations a {
+
+    .locations a, .mission a, .teas a, .contact a {
         top: -150px;
     }
-    
-    .mission a {
-        top: -150px;
+
+    .location {
+        width: 100%;
     }
-    
-    .teas a {
-        top: -150px;
-    }
-    
-    .locations {
-        overflow-y: scroll;
+    .details {
+        overflow-y: scroll; 
     }
 }
 
@@ -36,49 +32,43 @@ body {
     body{
         font-size: 100%;
     }  
+
     nav {
-    margin-right: 10px;
-    float: right;
-}
+        margin-right: 10px;
+        float: right;
+        margin-right: 10px;
+    }
 
-nav li {
-    display: inline;
-}
+    nav li {
+        display: inline;
+    }
 
-.logo img {
-    float: left;
-    margin-left: 10px;
-}
+    .logo img {
+        float: left;
+        margin-left: 10px;
+    }
 
-header {
-    height: 70px;
-}
-.locations a {
-    top: -70px;
-}
+    header {
+        height: 70px;
+    }
 
-.mission a {
-    top: -70px;
-}
+    .locations a, .mission a, .teas a, .contact a {
+        top: -70px;
+    }
 
-.teas a {
-    top: -70px;
-}
+    .location {
+        position: relative;
+        width: 25%;
+        height: auto;
+        opacity: 1; 
+        background-color: black;
+        margin: 5px 10px 5px 10px;  
+    }
 
-.location {
-    position: relative;
-    width: 25%;
-    opacity: 1; 
-    background-color: black;
-    margin: 5px 10px 5px 10px;  
-}
-
-.details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-self: stretch;
-}
+    .details {
+        justify-content: center;
+        align-content: center;
+    }
 }
 
 header {
@@ -104,15 +94,17 @@ a {
     color: seashell;
 }
 
-.locations a {
-    position: absolute;
+a:hover {
+    background: seashell;
+    color: black;
 }
 
-.mission a {
-    position: absolute;
+span {
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
 }
 
-.teas a {
+.locations a, .mission a, .teas a, .contact a {
     position: absolute;
 }
 
@@ -166,42 +158,54 @@ a {
     width: 100%;
 }
 
+.tea .type:first-child {
+    width: 85%;
+}
+
+.tea .type:last-child {
+    width: 85%;
+}
+
 .locations {
+    max-width: 95%;
+    position: relative;
+    top: 100px;
+    margin: 10px auto;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 15px;
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
     background-size: cover;
     height: 500px;
     flex-basis: 1200px;
-    max-width: 95%;
-    position: relative;
-    top: 80px;
-    margin: 0 auto;
-} 
-
-.locations h2 {
-    position: relative;
-    top: 50px;
-}
-
-.details {
-    position: relative;
-    top: 37px;
-
 }
 
 .location {
     position: relative;
     opacity: 1; 
     background-color: black;
-    margin: 5px 10px 5px 10px;  
+    margin: 10px 10px 5px 10px; 
+    padding: 5px; 
 }
 
 .contact {
     position: relative;
     height: 200px;
-    top: 90px;
+    top: 130px;
+    float: left;
+    text-align: left;
+    width: 100%;
+    margin-left: 20px;
 }
 
-footer h5 {
+footer {
+    position: relative;
     margin-left: 20px;
     float: left;
+    text-align: left;
+    top: 50px;
 }
