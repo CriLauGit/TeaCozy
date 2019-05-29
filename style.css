@@ -8,35 +8,36 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body{
         font-size: 100%;
     }
+
     header {
         height: 150px;
     }
 
     .locations a, .mission a, .teas a, .contact a {
-        top: -150px;
+        top: -160px;
     }
 
     .location {
         width: 100%;
     }
+    
     .details {
-        overflow-y: scroll; 
+        font-size: 75%; 
     }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     body{
         font-size: 100%;
     }  
 
     nav {
         margin-right: 10px;
-        float: right;
-        margin-right: 10px;
+        float: right;    
     }
 
     nav li {
@@ -53,7 +54,7 @@ body {
     }
 
     .locations a, .mission a, .teas a, .contact a {
-        top: -70px;
+        top: -80px;
     }
 
     .location {
@@ -88,6 +89,7 @@ header {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 a {
@@ -198,11 +200,12 @@ span {
     top: 130px;
     float: left;
     text-align: left;
-    width: 100%;
+    /*width: 100%; in loc de clear: left; la footer*/ 
     margin-left: 20px;
 }
 
 footer {
+    clear: left; /*sau width:100%; la .contact*/
     position: relative;
     margin-left: 20px;
     float: left;
