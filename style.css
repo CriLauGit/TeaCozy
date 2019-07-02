@@ -1,16 +1,16 @@
 body {
     font-family: Helvetica;
-    font-size: 22px;
     color: seashell;
     background-color: black;
     text-align: center;
     opacity: 0.5;
+    font-size: 22px;
 }
 
 
 @media screen and (max-width: 768px) {
-    body{
-        font-size: 100%;
+    body {
+        font-size: 1rem;
     }
 
     header {
@@ -26,13 +26,13 @@ body {
     }
     
     .details {
-        font-size: 75%; 
+        font-size: .75rem;
     }
 }
 
 @media screen and (min-width: 768px) {
     body{
-        font-size: 100%;
+        font-size: 1rem;
     }  
 
     nav {
@@ -103,7 +103,7 @@ a:hover {
 
 span {
     font-family: 'Cinzel', serif;
-    font-size: 50px;
+    font-size: 2.27rem;
 }
 
 .locations a, .mission a, .teas a, .contact a {
